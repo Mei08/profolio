@@ -1,0 +1,14 @@
+#links a{
+    font-size: 1.2e;
+    margin-left: 26%;
+    color:white;
+    padding:5%;
+    background-color: #FF3300;
+    text-decoration: none;
+}
+
+#links a:hover{
+    color:#FF3300;
+    background-color: white;
+    text-decoration: none;
+}
