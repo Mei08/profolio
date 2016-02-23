@@ -2,19 +2,18 @@ var express=require('express');
 var nodemailer = require("nodemailer");
 var app=express();
 /*
-    Here we are configuring our SMTP Server details.
-    STMP is mail server which is responsible for sending and recieving email.
+    configuring our SMTP Server details.
 */
 var smtpTransport = nodemailer.createTransport("SMTP",{
     service: "Gmail",
     auth: {
-        user: "125234mary@gmail.com",
-        pass: "JHK96109"
+        user: "mmei42037@gmail.com",
+        pass: "kjh96109"
     }
 });
-/*------------------SMTP Over-----------------------------*/
 
-/*------------------Routing Started ------------------------*/
+
+/*Routing Started */
 
 app.get('/',function(req,res){
     res.sendfile('index.html');
@@ -37,7 +36,7 @@ app.get('/send',function(req,res){
 });
 });
 
-/*--------------------Routing Over----------------------------*/
+/*Routing Over*/
 
 app.listen(12345,function(){
     console.log("Express Started on Port 12345");
